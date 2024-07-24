@@ -13,12 +13,12 @@ The Airline Reservation System is a comprehensive web application designed to fa
 
 ## Technologies Used
 
--Backend: Node.js,Express
--Frontend: HTML,CSS
--Database: PostgreSQL
+- Backend: Node.js,Express
+- Frontend: HTML,CSS
+- Database: PostgreSQL
 
 ## Installation
 
 1.Clone the repository: 
-[Link Text] git clone https://github.com/your-username/airlines.git
+[git clone https://github.com/your-username/airlines.git]
 cd airline
