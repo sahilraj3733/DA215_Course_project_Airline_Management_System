@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+<div class="for">
+    <h2><i class="fa fa-plane" aria-hidden="true"></i> Available Flights</h2>
+    <br>
+    <form action="/add_passengers" method="POST">
+        <table cellpadding='10'>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Flight Name</th>
+                    <th>Flight Number</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Price</th>
+                    <th>Distance</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Seats Available</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% flights.forEach((flight) => { %>
+                    <tr>
+                        <td>
+                            <input type="radio" name="select_flight" value="<%= flight.fno %>" required>
+                        </td>
+                        <td><%= flight.fname %></td>
+                        <td><%= flight.fno %></td>
+                        <td><%= flight.source %></td>
+                        <td><%= flight.destination %></td>
+                        <td><%= flight.price %></td>
+                        <td><%= flight.distance %></td>
+                        <td><%= flight.sdate %></td>
+                        <td><%= flight.edate %></td>
+                        <td><%= flight.seatava %></td>
+                        <td><%= flight.stime %></td>
+                        <td><%= flight.etime %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <br>
+        <input type="hidden" name="journey_date" value="<%= date %>">
+        <input type="hidden" name="no_of_pass" value="<%= pass %>">
+        <input type="submit" value="Proceed to Add Passengers">
+    </form>
+</div>

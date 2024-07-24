@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+    <h2>ADD PASSENGERS DETAILS</h2>
+    <form action="/ticket_details" method="post">
+        <% for (let count = 1; count <= no_of_pass; count++) { %>
+            <p><strong>PASSENGER <%= count %></strong></p>
+            <table cellpadding="0">
+                <tr>
+                    <td class="fix_table_short">Passenger's Name</td>
+                    <td class="fix_table_short">Passenger's Age</td>
+                    <td class="fix_table_short">Passenger's Gender</td>
+                </tr>
+                <tr>
+                    <td class="fix_table_short"><input type="text" name="pass_name[]" required></td>
+                    <td class="fix_table_short"><input type="number" name="pass_age[]" required></td>
+                    <td class="fix_table_short">
+                        <select name="pass_gender[]">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+        <% } %>
+        <input type="submit" value="Submit Ticket Details" name="Submit">
+    </form>
+</body>
+</html>

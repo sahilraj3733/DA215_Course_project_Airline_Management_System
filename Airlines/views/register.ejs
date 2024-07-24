@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+<div class="for">
+
+		
+    <form class="center_form" action="/register" method="POST" id="new_user_from">
+        <h2><i class="fa fa-user-plus" aria-hidden="true"></i> CREATE NEW USER ACCOUNT</h2>
+        <br>
+        <table cellpadding='10'>
+            <strong>ENTER LOGIN DETAILS</strong>
+            <tr>
+                <td>Enter your email ID</td>
+                <td><input type="text" name="email" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Enter User name </td>
+                <td><input type="text" name="user" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Enter your desired password  </td>
+                <td><input type="password" name="password" required><br><br></td>
+            </tr>
+           
+            
+            
+            
+        </table>
+        <br>
+        <table cellpadding='10'>
+            <strong>ENTER CUSTOMER'S PERSONAL DETAILS</strong>
+            <tr>
+                <td>Enter your name  </td>
+                <td><input type="text" name="name" required><br><br></td>
+            </tr>
+            
+            <tr>
+                <td>Age</td>
+                <td><input type="int" name="age" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td> <select id="gender" name="gender" required>
+               <option value="" disabled selected>Select Gender</option>
+             <option value="Male">Male</option>
+             <option value="Female">Female</option>
+         <option value="Other">Other</option>
+              </select>
+            
+            </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit" name="Submit">
+        <br>
+        </div>
+    </form>

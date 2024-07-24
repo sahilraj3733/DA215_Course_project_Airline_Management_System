@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        input {
+            border: 1.5px solid #030337;
+            border-radius: 4px;
+            padding: 7px 30px;
+        }
+        input[type=submit] {
+            background-color: #030337;
+            color: white;
+            border-radius: 4px;
+            padding: 7px 45px;
+            margin: 0px 135px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <img class="logo" src="photo.png" />
+    <h1 id="title">CENATION AIRLINES</h1>
+    <div>
+        <ul>
+            <li><a href="/admin_home_page"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="/login_page"><i class="fa fa-ticket"></i> Book Tickets</a></li>
+            <li><a href="/about_us"><i class="fa fa-plane"></i> About Us</a></li>
+            <li><a href="/contact_us"><i class="fa fa-phone"></i> Contact Us</a></li>
+            <li><a href="/logout"><i class="fa fa-sign-in"></i> Logout</a></li>
+        </ul>
+    </div>
+  
+    <table cellpadding="5">
+        <tr>
+            <td class="admin_func"><a href="/view_booked_tickets"><i class="fa fa-plane"></i> View List of Booked Tickets for a Flight</a></td>
+        </tr>
+        <tr>
+            <td class="admin_func"><a href="/add_flight"><i class="fa fa-plane"></i> Add Flight Schedule Details</a></td>
+        </tr>
+        <tr>
+            <td class="admin_func"><a href="/delete_flight"><i class="fa fa-plane"></i> Delete Flight Schedule Details</a></td>
+        </tr>
+    </table>
+   
+</body>
+</html>

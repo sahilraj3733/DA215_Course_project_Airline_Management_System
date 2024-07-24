@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="for">
+        <form class="center_form" action="/login" method="POST">
+            <h2><i class="fa fa-user-plus" aria-hidden="true"></i> LOGIN ACCOUNT</h2>
+            <br>
+            <table cellpadding='10'>
+                <tr>
+                    <td>Enter your email ID</td>
+                    <td><input type="text" name="email" required><br><br></td>
+                </tr>
+                <tr>
+                    <td>Enter your password</td>
+                    <td><input type="password" name="password" required><br><br></td>
+                </tr>
+                <tr>
+                    <td>Role</td>
+                    <td>
+                        <select name="role" required>
+                            <option value="" disabled selected>Role</option>
+                            <option value="passenger">Passenger</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Submit" name="Submit">
+            <br>
+            <a href="/register">Create New Account</a>
+        </form>
+    </div>
+</body>
+</html>

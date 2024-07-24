@@ -1,0 +1,44 @@
+
+
+
+    <%- include('partials/header') %>
+    <div class="for">
+
+		
+        <form  action="/search" method="POST">
+        <h2><i class="fa fa-user-plus" aria-hidden="true"></i> Search your Best Flight</h2>
+        <br>
+        <table cellpadding='10'>
+            
+            <tr>
+                <td> Enter the Origin </td>
+                <td><input list="destinations" name="origin" placeholder="From" required>
+                              <datalist id="destinations">
+                                    <option value="Mumbai">
+                                    <option value="Delhi">
+                                    <option value="Guwahati">
+                                    <option value="Patna">
+                                    <option value="Hyderabad">
+                              </datalist><br><br></td>
+            </tr>
+            <tr>
+                <td>Enter the Destination  </td>
+                <td> <input list="destinations" name="destination" placeholder="To" required>
+                              <br><br></td>
+            </tr>
+            <tr>
+                <td>Enter the Departure Date</td>
+                <td><input type="date" name="date" required><br><br></td>
+            </tr>
+            <tr>
+                <td> No. of ticket </td>
+                <td><input type="int" name= "pass" placeholder="Number of ticket" required><br></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Search for Available Flights" name="Search"></td></tr>
+            </table>
+            </div>
+    
+    </form>
+          
+

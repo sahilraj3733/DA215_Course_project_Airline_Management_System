@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+    <form action="/process_payment" method="post">
+        <h2>ENTER THE PAYMENT DETAILS</h2>
+        <h3 style="margin-left: 30px"><u>Payment Summary</u></h3>
+        <% 
+            const flight_no = session.flight_no;
+            const journey_date = session.journey_date;
+            const no_of_pass = session.no_of_pass;
+            const payment_id = session.payment_id;
+            const pnr = session.pnr;
+            const payment_date = new Date().toISOString().split('T')[0];
+            session.payment_date = payment_date;
+            const total_ticket_price = no_of_pass * price;
+            const total_amount = total_ticket_price;
+            session.total_amount = total_amount;
+        %>
+
+        <table cellpadding="5" style='margin-left: 50px'>
+            <tr>
+                <td class="fix_table">Base Fare, Fuel and Transaction Charges (Fees & Taxes included):</td>
+                <td class="fix_table">&#x20b9; <%= total_ticket_price %></td>
+            </tr>
+        </table>
+
+        <hr style='margin-right:900px; margin-left: 50px'>
+        <table cellpadding="5" style='margin-left: 50px'>
+            <tr>
+                <td class="fix_table"><strong>Total:</strong></td>
+                <td class="fix_table">&#x20b9; <%= total_amount %></td>
+            </tr>
+        </table>
+        <hr style='margin-right:900px; margin-left: 50px'>
+        <br>
+        <p style="margin-left:50px">Your Payment/Transaction ID is <strong><%= payment_id %></strong>. Please note it down for future reference.</p>
+        <br>
+
+        <table cellpadding="5" style='margin-left: 50px'>
+            <tr>
+                <td class="fix_table"><strong>Enter the Payment Mode:-</strong></td>
+            </tr>
+            <tr>
+                <td class="fix_table"><i class="fa fa-credit-card" aria-hidden="true"></i> Credit Card <input type="radio" name="payment_mode" value="credit card" checked></td>
+                <td class="fix_table"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Debit Card <input type="radio" name="payment_mode" value="debit card"></td>
+                <td class="fix_table"><i class="fa fa-desktop" aria-hidden="true"></i> Net Banking <input type="radio" name="payment_mode" value="net banking"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Pay Now" name="Pay_Now">
+    </form>
+</body>
+</html>

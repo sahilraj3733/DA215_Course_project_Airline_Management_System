@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Add Flight</title>
+</head>
+<body>
+    <form action="/add_flight" method="post" class="center_form">
+        <h2>ADD NEW FLIGHT</h2>
+        <div class="container">
+            <table cellpadding="10">
+                <tr>
+                    <td>Flight NO:</td>
+                    <td><input type="text" name="num" required></td>
+                </tr>
+                <tr>
+                    <td>Flight Name:</td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>From:</td>
+                    <td><input type="text" name="from" required></td>
+                </tr>
+                <tr>
+                    <td>To:</td>
+                    <td><input type="text" name="to" required></td>
+                </tr>
+                <tr>
+                    <td>Distance:</td>
+                    <td><input type="number" name="distance" required></td>
+                </tr>
+                <tr>
+                    <td>Total Seats:</td>
+                    <td><input type="number" name="seat" required></td>
+                </tr>
+                <tr>
+                    <td>Start Date:</td>
+                    <td><input type="date" name="sdate" required></td>
+                </tr>
+                <tr>
+                    <td>Arrival Date:</td>
+                    <td><input type="date" name="adate" required></td>
+                </tr>
+                <tr>
+                    <td>Start Time:</td>
+                    <td><input type="time" name="stime" required></td>
+                </tr>
+                <tr>
+                    <td>Arrival Time:</td>
+                    <td><input type="time" name="atime" required></td>
+                </tr>
+                <tr>
+                    <td>Price:</td>
+                    <td><input type="number" name="price" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Add</button></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
