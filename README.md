@@ -22,6 +22,7 @@ The Airline Reservation System is a comprehensive web application designed to fa
 1. Clone the repository: 
 
 git clone https://github.com/your-username/airlines.git
+
 cd airlines
 
 
@@ -31,15 +32,22 @@ cd airlines
 3. Configure the database connection:
 
    const db = new pg.Client({
+   
   user: "your-username",
+  
   host: "localhost",
+  
   database: "flight",
+  
   password: "your-password",
+  
   port: 5432,
+  
   });
+  
   db.connect();
 
-4. Run the application:
+5. Run the application:
 
    node index.js
 
