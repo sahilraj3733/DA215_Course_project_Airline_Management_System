@@ -6,10 +6,10 @@ The Airline Reservation System is a comprehensive web application designed to fa
 
 ## Features 
 
--Airline Management: Add, update, and remove Airline information.
--Schedule Management: Create and manage Airline schedules.
--Ticket Booking: Book tickets, view booking history, and cancel bookings.
--Customer Management: Store and manage customer details.
+- Airline Management: Add, update, and remove Airline information.
+- Schedule Management: Create and manage Airline schedules.
+- Ticket Booking: Book tickets, view booking history, and cancel bookings.
+- Customer Management: Store and manage customer details.
 
 ## Technologies Used
 
