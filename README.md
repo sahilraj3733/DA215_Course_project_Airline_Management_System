@@ -19,6 +19,10 @@ The Airline Reservation System is a comprehensive web application designed to fa
 
 ## Installation
 
-1.Clone the repository: 
+1. Clone the repository: 
 [git clone https://github.com/your-username/airlines.git]
 cd airline
+
+2. Install dependencies:
+   [Link Text](https://www.example.com)
+
